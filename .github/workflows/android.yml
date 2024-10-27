@@ -1,9 +1,14 @@
 name: Update Readme index
 
 on:
-
+  push:
+    branches:
+      - main
 
 jobs:
-  build:
-
+  TriggerTest:
     runs-on: ubuntu-latest
+    steps:
+      - name: hello_world
+        run: |
+          printf "안뇽 히히히"
