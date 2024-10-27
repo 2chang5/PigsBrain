@@ -13,10 +13,10 @@ fun generateReadme() {
 }
 
 fun generateHeaderMessage(content: StringBuilder) {
-    content.append("# PigsBrain")
-    content.append("🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗")
-    content.append("블로그가 글을 짤막하게 쓰기는 안좋은거 같아서 파일 형태로 사용하는 지식 저장소")
-    content.append("🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗")
+    content.appendWithLineBreak("# PigsBrain")
+    content.appendWithLineBreak("🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗")
+    content.appendWithLineBreak("블로그가 글을 짤막하게 쓰기는 안좋은거 같아서 파일 형태로 사용하는 지식 저장소")
+    content.appendWithLineBreak("🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗")
     insertSectionDivider(content)
 }
 
@@ -28,19 +28,18 @@ fun generateMainMessage(content: StringBuilder) {
     }
 
     folderList.asSequence().filter { it.isDirectory }.sortedBy { it.name }.forEach { folder ->
-        content.append("## ${folder.name}")
+        content.appendWithLineBreak("## ${folder.name}")
 
         val fileList = folder.listFiles()?.filter { it.isFile }?.sortedBy { it.name }
         fileList?.forEach { file ->
             val filePath = "docs/${folder.name}/${file.name}"
             val fileUrl = "$repoUrl/$filePath"
-            content.append("- [${file.name}]($fileUrl)")
+            content.appendWithLineBreak("- [${file.name}]($fileUrl)")
         }
 
         insertSectionDivider(content)
     }
 }
-
 
 
 fun overrideReadMeFile(content: StringBuilder) {
@@ -53,5 +52,10 @@ fun insertSectionDivider(content: StringBuilder) {
     content.append("\n")
     content.append("\n")
 }
+
+fun StringBuilder.appendWithLineBreak(value: String) {
+    append(value + "\n")
+}
+
 // 최종 실행
 generateReadme()
