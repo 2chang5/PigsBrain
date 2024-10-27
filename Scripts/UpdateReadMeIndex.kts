@@ -30,9 +30,9 @@ fun generateMainMessage(content: StringBuilder) {
     folderList.asSequence().filter { it.isDirectory }.sortedBy { it.name }.forEach { folder ->
         content.appendWithLineBreak("## ${folder.name}")
 
-        val fileList = folder.listFiles()?.filter { it.isFile }?.sortedBy { it.name }
+        val fileList = folder.listFiles().asSequence()?.filter { it.isFile }?.sortedBy { it.name }
         fileList?.forEach { file ->
-            val filePath = "docs/${folder.name}/${file.name}"
+            val filePath = "tree/main/docs/${folder.name}/${file.name}"
             val fileUrl = "$repoUrl/$filePath"
             content.appendWithLineBreak("- [${file.name}]($fileUrl)")
         }
