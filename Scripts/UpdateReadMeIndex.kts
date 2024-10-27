@@ -14,9 +14,9 @@ fun generateReadme() {
 
 fun generateHeaderMessage(content: StringBuilder) {
     content.appendWithLineBreak("# PigsBrain")
-    content.appendWithLineBreak("🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗")
+    content.appendWithLineBreak("🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗\n")
     content.appendWithLineBreak("블로그가 글을 짤막하게 쓰기는 안좋은거 같아서 파일 형태로 사용하는 지식 저장소")
-    content.appendWithLineBreak("🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗")
+    content.appendWithLineBreak("\n🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗🚨🐗")
     insertSectionDivider(content)
 }
 
