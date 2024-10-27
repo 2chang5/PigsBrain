@@ -8,28 +8,28 @@
 
 
 ## Android
-- [Android1.md](https://github.com/2chang5/PigsBrain/docs/Android/Android1.md)
-- [Android2.md](https://github.com/2chang5/PigsBrain/docs/Android/Android2.md)
+- [Android1.md](https://github.com/2chang5/PigsBrain/tree/main/docs/Android/Android1.md)
+- [Android2.md](https://github.com/2chang5/PigsBrain/tree/main/docs/Android/Android2.md)
 
 
 
 ## ComputerScience
-- [ComputerScience1.md](https://github.com/2chang5/PigsBrain/docs/ComputerScience/ComputerScience1.md)
+- [ComputerScience1.md](https://github.com/2chang5/PigsBrain/tree/main/docs/ComputerScience/ComputerScience1.md)
 
 
 
 ## Java
-- [Java1.md](https://github.com/2chang5/PigsBrain/docs/Java/Java1.md)
+- [Java1.md](https://github.com/2chang5/PigsBrain/tree/main/docs/Java/Java1.md)
 
 
 
 ## Kotlin
-- [Kotlin1.md](https://github.com/2chang5/PigsBrain/docs/Kotlin/Kotlin1.md)
+- [Kotlin1.md](https://github.com/2chang5/PigsBrain/tree/main/docs/Kotlin/Kotlin1.md)
 
 
 
 ## OOP
-- [OOP1.md](https://github.com/2chang5/PigsBrain/docs/OOP/OOP1.md)
+- [OOP1.md](https://github.com/2chang5/PigsBrain/tree/main/docs/OOP/OOP1.md)
 
 
 
