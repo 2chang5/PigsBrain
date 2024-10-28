@@ -7,29 +7,8 @@
 
 
 
-## Android
-- [Android1.md](https://github.com/2chang5/PigsBrain/tree/main/docs/Android/Android1.md)
-- [Android2.md](https://github.com/2chang5/PigsBrain/tree/main/docs/Android/Android2.md)
-
-
-
-## ComputerScience
-- [ComputerScience1.md](https://github.com/2chang5/PigsBrain/tree/main/docs/ComputerScience/ComputerScience1.md)
-
-
-
-## Java
-- [Java1.md](https://github.com/2chang5/PigsBrain/tree/main/docs/Java/Java1.md)
-
-
-
-## Kotlin
-- [Kotlin1.md](https://github.com/2chang5/PigsBrain/tree/main/docs/Kotlin/Kotlin1.md)
-
-
-
 ## OOP
-- [OOP1.md](https://github.com/2chang5/PigsBrain/tree/main/docs/OOP/OOP1.md)
+- [solid_단일_책임_원칙.md](https://github.com/2chang5/PigsBrain/tree/main/docs/OOP/solid_단일_책임_원칙.md)
 
 
 
