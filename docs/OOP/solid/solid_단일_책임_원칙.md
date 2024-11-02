@@ -19,9 +19,11 @@ solid하면 워낙 유명해서 무슨 200년은 된 원칙같은데 사실 생�
 
 
 ## 그래서 SRP
+일단 원문 블로그 영어라 chatgpt한테 해석시켰다 [해석내용](https://chatgpt.com/share/6725d7ce-0298-8005-8352-b86b4a995f45)  
 
 
 
 ## 참고자료
 - [by Robert C. Martin (Uncle Bob) 블로그](https://blog.cleancoder.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html)
 - [solid 위키피디아](https://ko.wikipedia.org/wiki/SOLID_(%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%EC%84%A4%EA%B3%84))
+- [퍼사드 패턴 설명](https://refactoring.guru/ko/design-patterns/facade)
