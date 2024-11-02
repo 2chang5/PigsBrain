@@ -21,7 +21,6 @@ fun generateHeaderMessage(content: StringBuilder) {
 }
 
 fun generateMainMessage(content: StringBuilder) {
-    // 폴더 리스트 끌어오는 부분(Null 값일경우 디버깅 메시지 후 종료)
     val folderList = docsDir.listFiles() ?: run {
         println("폴더가 아무것도 없는뎁쇼?🐗")
         exitProcess(0)
@@ -29,18 +28,24 @@ fun generateMainMessage(content: StringBuilder) {
 
     folderList.asSequence().filter { it.isDirectory }.sortedBy { it.name }.forEach { folder ->
         content.appendWithLineBreak("## ${folder.name}")
-
-        val fileList = folder.listFiles().asSequence()?.filter { it.isFile }?.sortedBy { it.name }
-        fileList?.forEach { file ->
-            val filePath = "tree/main/docs/${folder.name}/${file.name}"
-            val fileUrl = "$repoUrl/$filePath"
-            content.appendWithLineBreak("- [${file.name}]($fileUrl)")
-        }
-
+        appendFolderContent(content, folder)
         insertSectionDivider(content)
     }
 }
 
+fun appendFolderContent(content: StringBuilder, folder: File) {
+    val items = folder.listFiles()?.sortedBy { it.name }
+    items?.forEach { item ->
+        if (item.isDirectory) {
+            content.appendWithLineBreak("### ${item.name}")
+            appendFolderContent(content, item)
+        } else if (item.isFile) {
+            val filePath = "tree/main/docs/${folder.relativeTo(docsDir).path}/${item.name}"
+            val fileUrl = "$repoUrl/$filePath"
+            content.appendWithLineBreak("- [${item.name}]($fileUrl)")
+        }
+    }
+}
 
 fun overrideReadMeFile(content: StringBuilder) {
     readmeFile.writeText(content.toString())
@@ -48,9 +53,7 @@ fun overrideReadMeFile(content: StringBuilder) {
 }
 
 fun insertSectionDivider(content: StringBuilder) {
-    content.append("\n")
-    content.append("\n")
-    content.append("\n")
+    content.append("\n\n\n")
 }
 
 fun StringBuilder.appendWithLineBreak(value: String) {
