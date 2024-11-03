@@ -9,7 +9,6 @@
 
 ## OOP
 ### pattern
-- [pattern_어댑터_패턴.md](https://github.com/2chang5/PigsBrain/tree/main/docs/OOP/pattern/pattern_어댑터_패턴.md)
 - [pattern_퍼사드_패턴.md](https://github.com/2chang5/PigsBrain/tree/main/docs/OOP/pattern/pattern_퍼사드_패턴.md)
 ### solid
 - [0.solid란_무엇일까.md](https://github.com/2chang5/PigsBrain/tree/main/docs/OOP/solid/0.solid란_무엇일까.md)
