@@ -14,8 +14,20 @@
 
 
 
+
+
+
+
+
+
 ### solid
 - [solid_단일_책임_원칙.md](https://github.com/2chang5/PigsBrain/tree/main/docs/OOP/solid/solid_단일_책임_원칙.md)
+
+
+
+
+
+
 
 
 
