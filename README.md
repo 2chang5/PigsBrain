@@ -12,6 +12,7 @@
 - [pattern_어댑터_패턴.md](https://github.com/2chang5/PigsBrain/tree/main/docs/OOP/pattern/pattern_어댑터_패턴.md)
 - [pattern_퍼사드_패턴.md](https://github.com/2chang5/PigsBrain/tree/main/docs/OOP/pattern/pattern_퍼사드_패턴.md)
 ### solid
+- [0.solid란_무엇일까.md](https://github.com/2chang5/PigsBrain/tree/main/docs/OOP/solid/0.solid란_무엇일까.md)
 - [solid_단일_책임_원칙.md](https://github.com/2chang5/PigsBrain/tree/main/docs/OOP/solid/solid_단일_책임_원칙.md)
 ### OOP 폴더없는 친구들
 - [객체지향이란?.md](https://github.com/2chang5/PigsBrain/tree/main/docs/OOP/객체지향이란?.md)
