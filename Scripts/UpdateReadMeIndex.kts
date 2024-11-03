@@ -5,6 +5,7 @@ val repoUrl = "https://github.com/2chang5/PigsBrain"
 val docsDir = File("docs")
 val readmeFile = File("README.md")
 
+
 fun generateReadme() {
     val content = StringBuilder()
     generateHeaderMessage(content)
@@ -28,19 +29,20 @@ fun generateMainMessage(content: StringBuilder) {
 
     folderList.asSequence().filter { it.isDirectory }.sortedBy { it.name }.forEach { folder ->
         content.appendWithLineBreak("## ${folder.name}")
-        appendFolderContent(content, folder)
+        appendFolderContent(content, folder, true)
         insertSectionDivider(content)
     }
 }
 
-fun appendFolderContent(content: StringBuilder, folder: File) {
+fun appendFolderContent(content: StringBuilder, folder: File, isFirstCall:Boolean) {
     val items = folder.listFiles()?.sortedBy { it.name }
     items?.forEach { item ->
         if (item.isDirectory) {
             content.appendWithLineBreak("### ${item.name}")
-            appendFolderContent(content, item)
-            repeat(3) { insertSectionDivider(content) }
+            appendFolderContent(content, item, false)
         } else if (item.isFile) {
+            // 내부 폴더와 파일 사이 구획을 나누기 위한 방법
+            if(isFirstCall) content.appendWithLineBreak("### 폴더업는 친구들")
             val filePath = "tree/main/docs/${folder.relativeTo(docsDir).path}/${item.name}"
             val fileUrl = "$repoUrl/$filePath"
             content.appendWithLineBreak("- [${item.name}]($fileUrl)")
