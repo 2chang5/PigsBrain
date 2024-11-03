@@ -42,7 +42,7 @@ fun appendFolderContent(content: StringBuilder, folder: File, isFirstCall:Boolea
             appendFolderContent(content, item, false)
         } else if (item.isFile) {
             // 내부 폴더와 파일 사이 구획을 나누기 위한 방법
-            if(isFirstCall) content.appendWithLineBreak("### 폴더업는 친구들")
+            if(isFirstCall) content.appendWithLineBreak("### ${folder.name} 폴더없는 친구들")
             val filePath = "tree/main/docs/${folder.relativeTo(docsDir).path}/${item.name}"
             val fileUrl = "$repoUrl/$filePath"
             content.appendWithLineBreak("- [${item.name}]($fileUrl)")
