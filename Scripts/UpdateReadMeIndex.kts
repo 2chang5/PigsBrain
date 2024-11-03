@@ -39,7 +39,7 @@ fun appendFolderContent(content: StringBuilder, folder: File) {
         if (item.isDirectory) {
             content.appendWithLineBreak("### ${item.name}")
             appendFolderContent(content, item)
-            insertSectionDivider(content)
+            repeat(3) { insertSectionDivider(content) }
         } else if (item.isFile) {
             val filePath = "tree/main/docs/${folder.relativeTo(docsDir).path}/${item.name}"
             val fileUrl = "$repoUrl/$filePath"
