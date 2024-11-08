@@ -13,6 +13,7 @@
 ### solid
 - [0.solid란_무엇일까.md](https://github.com/2chang5/PigsBrain/tree/main/docs/OOP/solid/0.solid란_무엇일까.md)
 - [1.solid_단일_책임_원칙.md](https://github.com/2chang5/PigsBrain/tree/main/docs/OOP/solid/1.solid_단일_책임_원칙.md)
+- [2.solid_개방_폐쇄_원칙.md](https://github.com/2chang5/PigsBrain/tree/main/docs/OOP/solid/2.solid_개방_폐쇄_원칙.md)
 ### OOP 폴더없는 친구들
 - [객체지향이란?.md](https://github.com/2chang5/PigsBrain/tree/main/docs/OOP/객체지향이란?.md)
 
