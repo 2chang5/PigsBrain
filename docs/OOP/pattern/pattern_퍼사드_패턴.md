@@ -110,7 +110,65 @@ IOT를 예시로 봤을떄 편할라고 자동화를 만들어놨는데 이 자�
 2. 다른 라이브러리나 다른 객체들의 상호작용을 한번더 단순화 시킬떄(우리 시스템에 맞춰서 단순화 시키기)
 3. 뭔가 객체나 함수의 호출순서가 있어야하는 상황(물론 잘못 짰을 수 있지만 잘못 짰어도 사용해야할때가 있으니 보정방법으로) 퍼사드객체를 사용(퍼사드는 꼭 여러객체의 상호작용에만 적용하는것이 아닌 복잡한 단일 객체에도 적용가능)
 
+## 구현 예시
+이게 시간이 지나니까 구현 예시조차 기억이 안나서 구현체 하나를 예시로 들어놓는다.
+### 멧돼지 서브시스템
+```kotlin
+// 멧돼지 서브시스템 (밥먹고 똥싸는 기능)
 
+// 입
+class Mouth {
+    fun chew(food: String): String {
+        println("Mouth: Chewing $food")
+        return "chewed_$food"
+    }
+}
+
+// 위장
+class Stomach {
+    fun digest(food: String): String {
+        println("Stomach: Digesting $food")
+        return "digested_$food"
+    }
+}
+
+// 소장
+class SmallIntestine {
+    fun absorbNutrients(food: String): String {
+        println("Small Intestine: Absorbing nutrients from $food")
+        return "nutrient_essence"
+    }
+}
+
+// 대장
+class LargeIntestine {
+    fun excreteWaste(food: String): String {
+        println("Large Intestine: Excreting waste from $food")
+        return "waste"
+    }
+}
+```
+
+```kotlin
+class WildBoarFacade {
+    // 의존성 주입으로 받지않고 하드코딩 GOF를 따름
+    private val mouth = Mouth()
+    private val stomach = Stomach()
+    private val smallIntestine = SmallIntestine()
+    private val largeIntestine = LargeIntestine()
+
+    fun poop(food: String): String {
+
+        val chewedFood = mouth.chew(food)
+        val digestedFood = stomach.digest(chewedFood)
+        val enzymeMixedFood = duodenum.mixWithEnzymes(digestedFood)
+        val nutrientEssence = smallIntestine.absorbNutrients(enzymeMixedFood)
+        return largeIntestine.excreteWaste(enzymeMixedFood)
+    }
+}
+```
+
+뭐 재미로 멧돼지 밥먹는 서브시스템과 퍼사드 하나 만들어봤다.
 ## 참고자료
 - [guru 사이트](https://refactoring.guru/ko/design-patterns/facade)
 - Gof의 디자인 패턴 254p~264p
