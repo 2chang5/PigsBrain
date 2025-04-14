@@ -9,7 +9,7 @@
 
 ## OOP
 ### common
-- [객체지향이란?.md](https://github.com/2chang5/PigsBrain/tree/main/docs/OOP/common/객체지향이란?.md)
+- [객체지향이란 무엇일까.md](https://github.com/2chang5/PigsBrain/tree/main/docs/OOP/common/객체지향이란 무엇일까.md)
 ### pattern
 - [pattern_퍼사드_패턴.md](https://github.com/2chang5/PigsBrain/tree/main/docs/OOP/pattern/pattern_퍼사드_패턴.md)
 ### solid
