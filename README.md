@@ -7,6 +7,12 @@
 
 
 
+## Andrioid_default
+### Andrioid_default 폴더없는 친구들
+- [flag,launch_mode,task.md](https://github.com/2chang5/PigsBrain/tree/main/docs/Andrioid_default/flag,launch_mode,task.md)
+
+
+
 ## Android
 ### compose_공식문서_읽어보자
 - [SideEffect.md](https://github.com/2chang5/PigsBrain/tree/main/docs/Android/compose_공식문서_읽어보자/SideEffect.md)
