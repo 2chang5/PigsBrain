@@ -7,9 +7,9 @@
 
 
 
-## Andrioid_default
-### Andrioid_default 폴더없는 친구들
-- [flag,launch_mode,task.md](https://github.com/2chang5/PigsBrain/tree/main/docs/Andrioid_default/flag,launch_mode,task.md)
+## Andrioid
+### 기본내용
+- [flag,launch_mode,task.md](https://github.com/2chang5/PigsBrain/tree/main/docs/Andrioid/기본내용/flag,launch_mode,task.md)
 
 
 
