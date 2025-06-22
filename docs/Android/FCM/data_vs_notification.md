@@ -46,7 +46,7 @@ Notification 자동처리, 전달되는 JSON 내 Notification/Data를 이용하�
     - 백그라운드
         - FCM에서 기본적으로 Notification 처리됨 -> 커스터마이징 불가
         - onMessageReceived 호출되지 않음
-        - data에 포함된 데이터들 Intent에 전달 -> Notification을 통해 진입한 Activity내에서 getExtra를 통해서 데이터 전달 받을 수 있음([관련문서](https://firebase.google.com/docs/cloud-messaging/android/receive?utm_source=chatgpt.com#handling_messages))주석 이미지 참고
+        - data에 포함된 데이터들 Intent에 전달 -> Notification을 통해 진입한 Activity내에서 getExtra를 통해서 데이터 전달 받을 수 있음([관련문서](https://firebase.google.com/docs/cloud-messaging/android/receive?utm_source=chatgpt.com#handling_messages))[주석 이미지](https://github.com/2chang5/PigsBrain/blob/main/imageRes/FCM_%E1%84%8C%E1%85%AE%E1%84%89%E1%85%A5%E1%86%A8_%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5_1.png) 참고
     - 포그라운드
         - 기본 Notification 처리되지않음
         -  onMessageReceived() 호출됨 직점 notification 처리해야함
