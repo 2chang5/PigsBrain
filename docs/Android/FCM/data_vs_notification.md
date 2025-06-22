@@ -1,6 +1,6 @@
-# Fcm 관련된 내용을 학습하며 정리한 요약 문서입니다.
-메시지에 담아 보내는 Json을 기준으로 구분한 내용을 담고있습니다.
-Notification, Data, Notification+data 타입에 대한 내용이 주를 이룹니다.
+# Fcm 관련된 내용을 학습하며 정리한 요약 문서입니다.([공식문서](https://firebase.google.com/docs/cloud-messaging/concept-options?hl=ko&_gl=1*15agoq2*_up*MQ..*_ga*MTM5OTgwNjkzMS4xNzUwNDg2NjI2*_ga_CW55HF8NVT*czE3NTA0ODY2MjYkbzEkZzAkdDE3NTA0ODY2MzMkajUzJGwwJGgw))
+메시지에 담아 보내는 Json을 기준으로 구분한 내용을 담고있습니다.  
+Notification, Data, Notification+data 타입에 대한 내용이 주를 이룹니다.  
 
 ### FCM 아키텍처 개요
 
