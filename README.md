@@ -8,6 +8,8 @@
 
 
 ## Android
+### Camera
+- [Camera_x_뜯어먹기.md](https://github.com/2chang5/PigsBrain/tree/main/docs/Android/Camera/Camera_x_뜯어먹기.md)
 ### FCM
 - [data_vs_notification.md](https://github.com/2chang5/PigsBrain/tree/main/docs/Android/FCM/data_vs_notification.md)
 ### 기본내용
