@@ -7,15 +7,11 @@
 
 
 
-## Andrioid
-### 기본내용
-- [flag,launch_mode,task.md](https://github.com/2chang5/PigsBrain/tree/main/docs/Andrioid/기본내용/flag,launch_mode,task.md)
-
-
-
 ## Android
 ### FCM
 - [data_vs_notification.md](https://github.com/2chang5/PigsBrain/tree/main/docs/Android/FCM/data_vs_notification.md)
+### 기본내용
+- [flag,launch_mode,task.md](https://github.com/2chang5/PigsBrain/tree/main/docs/Android/기본내용/flag,launch_mode,task.md)
 
 
 
