@@ -7,6 +7,12 @@
 
 
 
+## AI
+### AI 폴더없는 친구들
+- [claude사용팁.md](https://github.com/2chang5/PigsBrain/tree/main/docs/AI/claude사용팁.md)
+
+
+
 ## Android
 ### Camera
 - [Camera_x_뜯어먹기.md](https://github.com/2chang5/PigsBrain/tree/main/docs/Android/Camera/Camera_x_뜯어먹기.md)
