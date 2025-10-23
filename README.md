@@ -9,7 +9,7 @@
 
 ## AI
 ### AI 폴더없는 친구들
-- [claude사용팁.md](https://github.com/2chang5/PigsBrain/tree/main/docs/AI/claude사용팁.md)
+- [claude code 사용팁.md](https://github.com/2chang5/PigsBrain/tree/main/docs/AI/claude code 사용팁.md)
 
 
 
