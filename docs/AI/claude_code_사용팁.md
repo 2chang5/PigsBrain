@@ -27,7 +27,7 @@ Plan Mode는 Claude Code가 파일 수정이나 실행을 바로 하지 않고, 
 클로드와 대화내용이 길어지면 해당 대화내용을 계속 클로드가 사용하기에 느려지고 토큰이 많이든다.  
 이럴때 대화내용을 요약해서 클로드가 들고있도록 하는것이 compact 명령이다.  
 기본 명령어: ```/compact```  
-설정을 추가한 명령어:```/compact Focus on preserving our current authentication implementation and the database schema decisions we've made.```
+설정을 추가한 명령어:```/compact 간결하게 요약하되 gradle 설정에 대한내용은 상세히 다 남겨놔```
 
 ### Output style
 클로드 코드는 사용자가 원하는 행위를 이루기위한 응답의 스타일을 지정할 수 있다.  
