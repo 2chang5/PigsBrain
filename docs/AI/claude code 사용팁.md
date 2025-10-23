@@ -25,7 +25,7 @@ Plan Mode는 Claude Code가 파일 수정이나 실행을 바로 하지 않고, 
 
 #### compact: 기존 컨텍스트 요약해서 효율 올리기
 클로드와 대화내용이 길어지면 해당 대화내용을 계속 클로드가 사용하기에 느려지고 토큰이 많이든다.  
-이럴때 대화내용을 요약해서 클로드가 들고있도록 하는것이 compact 명령이다.
+이럴때 대화내용을 요약해서 클로드가 들고있도록 하는것이 compact 명령이다.  
 기본 명령어: ```/compact```  
 설정을 추가한 명령어:```/compact Focus on preserving our current authentication implementation and the database schema decisions we've made.```
 
@@ -33,7 +33,7 @@ Plan Mode는 Claude Code가 파일 수정이나 실행을 바로 하지 않고, 
 클로드 코드는 사용자가 원하는 행위를 이루기위한 응답의 스타일을 지정할 수 있다.  
 이에 각 응답스타일의 용도를 살펴보고 적재적소에 이용해보자
 
-사용방법: ```/output-style``` 입력시 모드 선택이 나온다.
+사용방법: ```/output-style``` 입력시 모드 선택이 나온다.  
 - Default: 가장 일반적인 모드로, 요청한 기능을 빠르고 효율적으로 구현하는 결과 중심 스타일. 설명은 최소화되어 있음.
 - Explanatory: 코드뿐 아니라 설계 의도와 선택 이유를 함께 설명해주는 모드로, 학습이나 코드 리뷰에 적합함.
 - Learning: Claude가 질문을 던지며 사용자가 직접 코드를 완성하도록 유도하는 상호작용형 학습 모드.
