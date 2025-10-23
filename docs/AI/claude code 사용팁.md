@@ -26,7 +26,7 @@ Plan Mode는 Claude Code가 파일 수정이나 실행을 바로 하지 않고, 
 #### compact: 기존 컨텍스트 요약해서 효율 올리기
 클로드와 대화내용이 길어지면 해당 대화내용을 계속 클로드가 사용하기에 느려지고 토큰이 많이든다.  
 이럴때 대화내용을 요약해서 클로드가 들고있도록 하는것이 compact 명령이다.
-기본 명령어: ```/compact```
+기본 명령어: ```/compact```  
 설정을 추가한 명령어:```/compact Focus on preserving our current authentication implementation and the database schema decisions we've made.```
 
 ### Output style
